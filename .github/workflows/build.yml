@@ -13,3 +13,9 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
             command: npm run cypress:test
+
+      - name: Cypress report upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mocha report uplaod
+          path: cypress/reports/html
