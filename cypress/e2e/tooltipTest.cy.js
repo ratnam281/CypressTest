@@ -1,4 +1,4 @@
-describe('tooltip p[ractise', ()=> {
+describe('tooltip practise', ()=> {
     it('test',()=>{
         cy.visit('https://practice.expandtesting.com/tooltips')
         cy.get('#btn3').trigger('mouseover')
