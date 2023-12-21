@@ -12,7 +12,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-            command: npm run cypress:test
+          command: npm run cypress:test
 
       - name: Cypress report upload
         uses: actions/upload-artifact@v4
