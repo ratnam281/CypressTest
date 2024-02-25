@@ -29,7 +29,7 @@ describe('tooltip practise',
         })
     })
 
-    it.only('alert',{tags:'smoke'},()=>{
+    it.skip('alert',{tags:'smoke'},()=>{
         //tag:smoke
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
          
@@ -43,5 +43,16 @@ describe('tooltip practise',
         //  cy.screenshot()
         // cy.log(data)
     })     
-        
+
+    it('each testing',()=>{
+      
+      cy.visit('https://www.flipkart.com/')
+       
+       cy.get('._1ch8e_').each(($el) => {
+        cy.log($el.text())
+       })
+      //  console.log(l)
+      //  cy.screenshot()
+      // cy.log(data)
+  })  
 })
