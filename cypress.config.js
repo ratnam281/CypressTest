@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-// import { tagify } from 'cypress-tags';
+// const { tagify } = require("cypress-tags");
 
 module.exports = defineConfig({
   video:true,

@@ -29,7 +29,8 @@ describe('tooltip practise',
         })
     })
 
-    it.only('alert',()=>{
+    it.only('alert',{tags:'smoke'},()=>{
+        //tag:smoke
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
          
          cy.on('window:alert',function(AlertText) // for alert type
